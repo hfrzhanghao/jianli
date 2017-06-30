@@ -1,0 +1,572 @@
+html,
+body {
+    height: 100%;
+}
+
+body,
+ul,
+li,
+a,
+p,
+div {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+ul,
+li {
+    margin: 10px;
+}
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* 封面 */
+
+#page1 {
+    background: url("../img/bg.png") #87b0a5;
+    display: flex;
+}
+
+
+/* 简介 */
+
+#brief {
+    width: 800px;
+    height: 450px;
+    margin: auto;
+}
+
+
+/* 头像 */
+
+#head-img {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-image: url("../img/zhangcheng.jpg");
+}
+
+
+/* 口号 */
+
+#slogan {
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#slogan p {
+    font-size: 22px;
+    color: white;
+}
+
+#about-me {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-me p {
+    font-size: 18px;
+    color: white;
+    margin: 20px auto;
+}
+
+.horiz {
+    width: 800px;
+    margin: 20px auto;
+    border-bottom: .5px solid rgba(255, 255, 255, .6);
+}
+
+
+/* 基本信息 */
+
+#page2 {
+    background: url("../img/bg.png") #109085;
+    display: flex;
+}
+
+#my-info {
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+#guanyu p {
+    font-size: 22px;
+    color: white;
+}
+
+#info-list {
+    width: 800px;
+    height: 180px;
+    margin: 20px auto;
+}
+
+#info-list div {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+#info-list div div {
+    margin: 27px 55px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+}
+
+#info-list div div i {
+    margin: auto;
+}
+
+#info-list div p {
+    color: white;
+    font-size: 18px;
+}
+
+
+/* 简单经历 */
+
+#my-exp {
+    text-align: center;
+    color: white;
+}
+
+#my-exp p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+/* 技能 */
+
+#page3 {
+    background: url("../img/bg.png") #4d5e8f;
+    display: flex;
+}
+
+#skill-panel {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+}
+
+#skill {
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+#skill p {
+    font-size: 22px;
+    margin: 10px;
+    color: white;
+}
+
+#skill-cont {
+    width: 1000px;
+    height: 400px;
+    display: block;
+}
+
+#skill-des {
+    width: 400px;
+    height: 400px;
+    float: right;
+    display: flex;
+}
+
+#skill-des-det {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+#skill-des p {
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+#skill-spin {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+
+
+/* 内环 */
+
+#skill-spin-inner {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px dashed gray;
+    position: absolute;
+    margin: 100px;
+}
+
+
+/* 外环 */
+
+#skill-spin-outter {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px dashed gray;
+    position: absolute;
+}
+
+.single-spin-inner {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    animation: spin-inner 8s infinite linear;
+}
+
+.single-spin-outter {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    animation: spin-outter 8s infinite linear;
+}
+
+
+/* 各个小星球的位置 旋转基点 */
+
+#js {
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    transform-origin: 30px 130px;
+    background: rgba(100, 255, 255, .2);
+}
+
+#html {
+    position: absolute;
+    top: 70px;
+    left: 170px;
+    transform-origin: -70px 30px;
+    background: rgba(255, 100, 255, .2);
+}
+
+#css {
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    transform-origin: 30px -70px;
+    background: rgba(255, 255, 100, .2);
+}
+
+#jq {
+    position: absolute;
+    top: 70px;
+    left: -30px;
+    transform-origin: 130px 30px;
+    background: rgba(255, 255, 255, .2);
+}
+
+#angularjs {
+    position: absolute;
+    top: -30px;
+    left: 170px;
+    transform-origin: 30px 230px;
+    background: rgba(100, 100, 255, .6);
+}
+
+#nodejs {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    transform-origin: 200px 130px;
+    background: rgba(200, 100, 255, .6);
+}
+
+#gulp {
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    transform-origin: 200px -70px;
+    background: rgba(100, 100, 255, .6);
+}
+
+#fis {
+    position: absolute;
+    top: 370px;
+    left: 170px;
+    transform-origin: 30px -170px;
+    background: rgba(150, 150, 100, .6);
+}
+
+#less {
+    position: absolute;
+    top: 60px;
+    left: 340px;
+    transform-origin: -140px 140px;
+    background: rgba(100, 255, 100, .4);
+}
+
+#vue {
+    position: absolute;
+    top: 270px;
+    left: 340px;
+    transform-origin: -140px -70px;
+    background: rgba(150, 250, 100, .6);
+}
+
+
+/* 各个小星球通用样式 动画 */
+
+.reverse-spin-inner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    margin auto;
+    animation: spin-reverse-inner 8s infinite linear;
+    display: flex;
+}
+
+.reverse-spin-outter {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    margin auto;
+    animation: spin-reverse-outter 8s infinite linear;
+    display: flex;
+}
+
+.reverse-spin-inner p {
+    margin: auto;
+    color: white;
+    font-size: 16px;
+}
+
+.reverse-spin-outter p {
+    margin: auto;
+    color: white;
+    font-size: 16px;
+}
+
+@keyframes spin-inner {
+    from {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin-reverse-inner {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin-outter {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin-reverse-outter {
+    from {
+        transform: rotate(1turn)
+    }
+}
+
+
+/* 我的经历 */
+
+#page4 {
+    background: url("../img/bg.png") #945c4c;
+    display: flex;
+}
+
+#exp-panel {
+    margin: auto;
+    width: 800px;
+    height: 600px;
+}
+
+#title-exp {
+    width: 800px;
+    height: 50px;
+    display: flex;
+}
+
+#title-exp p {
+    margin: auto;
+    color: white;
+    font-size: 22px;
+}
+
+#exp-content {
+    width: 800px;
+    height: 550px;
+    background: white;
+    box-shadow: 2px 2px 15px #473838;
+    border-radius: 10px;
+}
+
+
+/* 公司logo */
+
+#logo {
+    display: flex;
+    float: left;
+    width: 200px;
+    height: 550px;
+}
+
+#logo img {
+    margin: auto;
+    width: 150px;
+}
+
+#exp-des {
+    display: flex;
+    float: right;
+    width: 580px;
+    height: 550px;
+    border-left: .5px solid #e6e6e6;
+}
+
+#exp-des div {
+    padding: 20px;
+}
+
+#exp-des div h3,
+h4 {
+    color: #945c4c;
+    margin: 10px;
+}
+
+#exp-des div p {
+    color: #945c4c;
+    margin: 10px;
+}
+
+
+/* 联系方式 */
+
+#page5 {
+    background: url("../img/bg.png") #4b85a0;
+    display: flex;
+}
+
+#contact {
+    margin: auto;
+    width: 650px;
+    height: 500px;
+    //display: flex;
+}
+
+#contact-title p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+#text {
+    width: 650px;
+    height: 150px;
+    margin: 80px auto;
+}
+
+#col-txt {
+    width: 650px;
+    height: 40px;
+    text-align: center;
+}
+
+#col-txt span {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#col-txt span:nth-child(1) {
+    color: #a5f3d9;
+}
+
+#col-txt span:nth-child(2) {
+    color: #afc9f3;
+}
+
+#col-txt span:nth-child(3) {
+    color: #88f7b7;
+}
+
+#col-txt span:nth-child(4) {
+    color: #ccf76e;
+}
+
+#text p {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#contact-list ul li {
+    list-style-type: none;
+    margin: 50px;
+}
+
+.contact-card {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 100px 4px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    border: .5px solid white;
+}
+
+.contact-card img {
+    width: 50px;
+    margin: auto;
+}
+
+
+/* 右侧导航 */
+
+#nav-dot {
+    width: 20px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    top: 300px;
+}
+
+#nav-dot ul li {
+    list-style-type: none;
+    margin: 25px;
+    text-align: center;
+    width: 25px;
+}
